@@ -48,3 +48,13 @@ h1, h2, h3 {
   font-family: var(--fuente-titulos);
   margin-top: 0;
 }
+
+/* Ajuste responsivo para móviles */
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+  .registro-container, .dashboard-container {
+    padding: var(--espaciado-md);
+  }
+}
