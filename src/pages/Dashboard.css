@@ -1,0 +1,36 @@
+.dashboard-container {
+  background-color: var(--color-superficie);
+  padding: var(--espaciado-xl);
+  border-radius: var(--borde-radio);
+  box-shadow: var(--sombra-suave);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.dashboard-container h2 {
+  color: var(--color-primario);
+  margin-bottom: var(--espaciado-sm);
+}
+
+.dashboard-container p {
+  color: var(--color-texto-claro);
+  margin-bottom: var(--espaciado-lg);
+}
+
+.btn-cerrar-sesion {
+  background-color: transparent;
+  color: var(--color-error);
+  border: 2px solid var(--color-error);
+  padding: 10px 20px;
+  border-radius: var(--borde-radio);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-cerrar-sesion:hover {
+  background-color: var(--color-error);
+  color: white;
+}
