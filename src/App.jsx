@@ -4,6 +4,7 @@ import Registro from './pages/Registro';
 import Dashboard from './pages/Dashboard';
 import RutaProtegida from './components/RutaProtegida';
 import './App.css';
+import RegistrarObra from './pages/RegistrarObra';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           {/* Ruta protegida (solo entra si hay sesión) */}
           <Route element={<RutaProtegida />}>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/registrar-obra" element={<RegistrarObra />} />
           </Route>
           
         </Route>
