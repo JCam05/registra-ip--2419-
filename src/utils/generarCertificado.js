@@ -63,7 +63,7 @@ export const generarCertificado = async (obra) => {
   // Código QR (Esquina inferior derecha)
   doc.addImage(qrDataURL, 'PNG', anchoPagina - 50, 175, 30, 30);
 
-  // Leyenda obligatoria (Pie de página)
+  // (Pie de página)
   doc.setFont('helvetica', 'italic');
   doc.setFontSize(10);
   doc.setTextColor(100, 100, 100);
