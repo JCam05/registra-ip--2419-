@@ -1,0 +1,143 @@
+.wizard-container {
+  background-color: var(--color-superficie);
+  padding: var(--espaciado-xl);
+  border-radius: var(--borde-radio);
+  box-shadow: var(--sombra-suave);
+  width: 100%;
+  max-width: 600px;
+}
+
+.wizard-container h2 {
+  color: var(--color-primario);
+  text-align: center;
+}
+
+/* Barra de progreso */
+.barra-progreso {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--espaciado-xl);
+  position: relative;
+}
+
+.circulo-paso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 1;
+}
+
+.numero {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--color-borde);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.circulo-paso.activo .numero {
+  background-color: var(--color-primario);
+}
+
+.etiqueta {
+  font-size: 0.8rem;
+  color: var(--color-texto-claro);
+  text-align: center;
+}
+
+/* Contenido de cada paso */
+.paso-contenido {
+  min-height: 200px;
+  margin-bottom: var(--espaciado-lg);
+}
+
+.paso-contenido h3 {
+  margin-bottom: var(--espaciado-md);
+  color: var(--color-texto);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: var(--espaciado-md);
+}
+
+.campo input, .campo select, .campo textarea {
+  padding: 10px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--borde-radio);
+  font-family: var(--fuente-base);
+}
+
+.resumen {
+  list-style: none;
+  padding: 0;
+  background-color: var(--color-fondo);
+  padding: var(--espaciado-md);
+  border-radius: var(--borde-radio);
+}
+
+.resumen li {
+  margin-bottom: 10px;
+}
+
+/* Botones */
+.botones-navegacion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--espaciado-lg);
+  border-top: 1px solid var(--color-borde);
+  padding-top: var(--espaciado-md);
+}
+
+.btn-siguiente, .btn-confirmar {
+  background-color: var(--color-primario);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--borde-radio);
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: auto; /* Empuja el botón a la derecha */
+}
+
+.btn-siguiente:disabled {
+  background-color: var(--color-borde);
+  cursor: not-allowed;
+}
+
+.btn-atras {
+  background-color: transparent;
+  border: 1px solid var(--color-texto-claro);
+  color: var(--color-texto);
+  padding: 10px 20px;
+  border-radius: var(--borde-radio);
+  cursor: pointer;
+}
+
+.error {
+  color: var(--color-error);
+  font-size: 0.85rem;
+}
+
+/* Pantalla de éxito */
+.pantalla-exito {
+  text-align: center;
+  padding: var(--espaciado-xl) 0;
+}
+
+.folio {
+  color: var(--color-primario);
+  font-size: 2rem;
+  border: 2px dashed var(--color-primario);
+  padding: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
