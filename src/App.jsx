@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import RutaProtegida from './components/RutaProtegida';
 import './App.css';
 import RegistrarObra from './pages/RegistrarObra';
+import DetalleObra from './pages/DetalleObra';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route element={<RutaProtegida />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/registrar-obra" element={<RegistrarObra />} />
+            <Route path="/detalle-obra" element={<DetalleObra />} />
           </Route>
           
         </Route>
